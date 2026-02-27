@@ -7,4 +7,4 @@ This repository contains codes to fit models on data samples that follow truncat
 - MLE for a Schechter function $f(x)\propto x^{-a}e^{-\frac{x}{x_{\mathrm{turn}}}}$
 - MLE for a Schechter-like function with stronger than exponential downturn $f(x)\propto x^{-a}e^{-(\frac{x}{x_{\mathrm{turn}}})^{\gamma}}$
 
-For all MLE models, the standard deviations are derived as well, using the Hessian matrix to approximate the Fisher Information.
+For all MLE models, the standard errors are derived as well, using the Hessian matrix to approximate the Fisher Information.
