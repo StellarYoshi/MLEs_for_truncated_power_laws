@@ -1,10 +1,14 @@
-# MLEs with errors estimates for truncated power laws
-This repository contains codes to fit models on data samples that follow truncated power law functions via Maximum Likelihood Estimation (MLE). Also, error estimates (valid for large number of data points) are derived and code for a Likelihood ratio test (a hypothesis test) is provided to compare the model performances.
+# MLEs with error estimates for (truncated) power laws
 
+The slope of power law-distributed data samples, where $f(x)\propto x^a$, is often determined by using histograms. This leads to the so-called binning bias. This bias can be avoided by methods that don't rely on binning such as maximum likelihood estimators (MLEs).
+
+The code makes it possible to fit analytical functions to power law distributed data that show a high-end downturn, including the cases where the downturn is strong. By modeling this downturn explicitly, it can produce more accurate estimates of the underlying power law slope. 
+
+In an astrophysical context it may be helpful to find analytical approximations for otherwise non-analytical functions with high-end downturns, such as composite IMFs and especially the IGIMF.
 
 ## Contents:
 - MLE for a pure power law $f(x)\propto x^{-a}$
 - MLE for a Schechter function $f(x)\propto x^{-a}e^{-\frac{x}{x_{\mathrm{turn}}}}$
 - MLE for a Schechter-like function with stronger than exponential downturn $f(x)\propto x^{-a}e^{-(\frac{x}{x_{\mathrm{turn}}})^{\gamma}}$
 
-For all MLE models, the standard errors are derived as well, using the Hessian matrix to approximate the Fisher Information.
+For all MLE models, the standard errors are calculated as well.
