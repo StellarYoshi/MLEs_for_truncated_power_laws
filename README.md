@@ -12,3 +12,7 @@ In an astrophysical context it may be helpful to find analytical approximations 
 - MLE for a Schechter-like function with stronger than exponential downturn $f(x)\propto x^{-a}e^{-(\frac{x}{x_{\mathrm{turn}}})^{\gamma}}$
 
 For all MLE models, the standard errors are calculated as well.
+
+## Caution
+
+The codes were not yet tested independently, so currently caution is advised when using them.
